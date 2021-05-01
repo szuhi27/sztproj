@@ -1,6 +1,7 @@
 package szoftteszt;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -31,6 +32,13 @@ public class CalculatorTest {
   }
 
   @Test
+  @DisplayName("Average should not be correct")
+  public void testAverageFalse(){
+    int[] array = {73,24,52,23,654,11,235,4745};
+    assertNotEquals(46.53, calculator.Average(array), "Average repeat should work");
+  }
+
+  @Test
   @DisplayName("Projection should work")
   public void testProjected() {
     assertEquals(2.08, calculator.ProjPrice(1250, 5, 120), "Projection should work");
@@ -41,4 +49,11 @@ public class CalculatorTest {
   public void testProjectedRepeat() {
     assertEquals(8.01, calculator.ProjPrice(23000, 8, 359), "Projection repeat should work");
   }
+
+  @Test
+  @DisplayName("Projection should not be correct")
+  public void testProjectedFalse(){
+    assertNotEquals(3.65, calculator.ProjPrice(314,4,233), "Projection should not be correct");
+  }
+
 }

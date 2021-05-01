@@ -8,8 +8,8 @@ public class Calculator {
     /*for (int number : numbers) {
       price += number;
     }*/
-    for(int i = 0; i< numbers.length; i++){
-        price += numbers[i];
+    for (int i = 0; i < numbers.length; i++) {
+      price += numbers[i];
     }
     avg = (double) price / numbers.length;
     double scale = Math.pow(10, 2);

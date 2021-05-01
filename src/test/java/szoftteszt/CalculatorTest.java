@@ -33,8 +33,8 @@ public class CalculatorTest {
 
   @Test
   @DisplayName("Average should not be correct")
-  public void testAverageFalse(){
-    int[] array = {73,24,52,23,654,11,235,4745};
+  public void testAverageFalse() {
+    int[] array = {73, 24, 52, 23, 654, 11, 235, 4745};
     assertNotEquals(46.53, calculator.Average(array), "Average repeat should work");
   }
 
@@ -52,8 +52,7 @@ public class CalculatorTest {
 
   @Test
   @DisplayName("Projection should not be correct")
-  public void testProjectedFalse(){
-    assertNotEquals(3.65, calculator.ProjPrice(314,4,233), "Projection should not be correct");
+  public void testProjectedFalse() {
+    assertNotEquals(3.65, calculator.ProjPrice(314, 4, 233), "Projection should not be correct");
   }
-
 }

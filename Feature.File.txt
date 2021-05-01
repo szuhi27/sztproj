@@ -1,0 +1,64 @@
+Történet (Story): Számítás számológépen
+Azért, hogy (In order to) kiszámoljam a matematikai műveleteket
+(As a) felhasználóként
+(I want to) Megkapjam a kiszámított helyes eredményt 
+
+
+
+Scenario 1/TC1: Helyes átlag számítás
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom az 5, 5, 5, 5 értékeket'
+then: 'Eredményül visszakapom a 5.00 helyes értéket
+
+
+
+Scenario 1/TC2: Helyes átlag számítás
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom az 5, 3, 4, 6, 8, 9, 1, 6, 20, 4, 61, 32 értékeket'
+then: 'Eredményül visszakapom az 13.25 helyes értéket
+
+
+
+Scenario 1/TC3: Helytelen átlag vizsgálat
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom a 73, 24, 52, 23, 654, 11, 235, 4745 értékeket'
+then: 'Visszakapom a helyes eredményt, ami nem egyenlő a 46.53 értékkel'
+
+---------------------------------------------------------------------
+
+Scenario 2/TC1: Helyes megtérülési év kiszámítása
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom a landCost = 1250 értéket'
+and: 'Beírom a sell = 5 értéket'
+and : 'Beírom a yield = 120 értéket'
+then: 'Eredményül visszakapom a 2.08 helyes értéket'
+
+
+Scenario 2/TC2: Helyes megtérülési év kiszámítása
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom a landCost = 23000 értéket'
+and: 'Beírom a sell = 8 értéket'
+and : 'Beírom a yield = 359 értéket'
+then: 'Eredményül visszakapom az 8.01 helyes értéket'
+
+
+Scenario 2/TC3: Helyes és helytelen megtérülési év összehasonlítása
+
+given: 'Elindult az alkalmazás'
+
+when: 'Beírom a landCost = 314 értéket'
+and: 'Beírom a sell = 4 értéket'
+and : 'Beírom a yield = 233 értéket'
+then: 'Eredményül visszakapom a helyes értéket, ami nem 3.65'
+
+
